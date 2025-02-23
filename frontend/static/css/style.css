@@ -1,28 +1,61 @@
+/* General Styling */
 body {
     background-color: #f8f9fa;
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
+/* Centered Card */
 .card {
-    max-width: 600px;
-    margin: auto;
+    max-width: 400px; /* Reduced width for a more compact design */
+    width: 100%;
     border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
+/* Header */
 h2 {
+    font-size: 20px;
     font-weight: bold;
+    color: #333;
 }
 
-pre.code-block {
-    background-color: #282c34;
-    color: #ffffff;
-    padding: 15px;
+/* File Input */
+input[type="file"] {
+    font-size: 14px;
+    padding: 6px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
     border-radius: 5px;
-    overflow-x: auto;
 }
 
-.alert {
-    font-size: 16px;
-    font-weight: bold;
+/* Supported Job Types (Initially Hidden) */
+.job-icons {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Hide Job Types Initially */
+.d-none {
+    display: none;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 6px 10px;
+    margin: 5px;
 }
 
