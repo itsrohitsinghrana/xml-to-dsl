@@ -1,61 +1,69 @@
-/* General Styling */
+/* General Page Styling */
 body {
-    background-color: #f8f9fa;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #30cfd0, #3300ff);
+    color: white;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    min-height: 100vh;
 }
 
-/* Centered Card */
-.card {
-    max-width: 400px; /* Reduced width for a more compact design */
-    width: 100%;
+/* Main Container */
+.container {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: black;
     text-align: center;
 }
 
-/* Header */
-h2 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
+/* Upload Form */
+.upload-card {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* File Input */
-input[type="file"] {
-    font-size: 14px;
-    padding: 6px;
-    margin-bottom: 15px;
+.btn-gradient {
+    background: linear-gradient(to right, #30cfd0, #3300ff);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
-/* Buttons */
-.btn {
-    padding: 10px;
-    width: 100%;
-    font-size: 14px;
+.btn-gradient:hover {
+    background: linear-gradient(to right, #3300ff, #30cfd0);
+}
+
+/* Result Page */
+.result-box {
+    width: 100%;          
+    max-width: 900px; 
+    padding: 15px;
+    background: #f4f4f4;
+    border-left: 5px solid #30cfd0;
+    margin-bottom: 50px;
     border-radius: 5px;
 }
 
-/* Supported Job Types (Initially Hidden) */
-.job-icons {
-    background: #f8f9fa;
-    padding: 10px;
+.dsl-code {
+    font-size: 10px;  
+    line-height: 1.5; 
+    text-align: left; 
+    max-height: 400px; 
+    overflow-y: auto;  
+    background: #222;
+    color: white;
+    padding: 15px;
     border-radius: 5px;
-    margin-top: 10px;
+    white-space: pre-wrap;
 }
-
-/* Hide Job Types Initially */
-.d-none {
-    display: none;
-}
-
-.badge {
-    font-size: 12px;
-    padding: 6px 10px;
-    margin: 5px;
-}
-
