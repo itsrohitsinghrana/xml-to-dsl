@@ -1,0 +1,23 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    max-width: 700px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+pre.code-block {
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
