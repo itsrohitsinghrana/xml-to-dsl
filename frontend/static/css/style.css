@@ -4,7 +4,7 @@ body {
 }
 
 .card {
-    max-width: 700px;
+    max-width: 600px;
     margin: auto;
     border-radius: 10px;
 }
@@ -19,5 +19,10 @@ pre.code-block {
     padding: 15px;
     border-radius: 5px;
     overflow-x: auto;
+}
+
+.alert {
+    font-size: 16px;
+    font-weight: bold;
 }
 

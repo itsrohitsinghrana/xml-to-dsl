@@ -1,3 +1,9 @@
+
+---
+
+## **📌 Updated `index.html` to Show Supported Job Types**  
+### **📍 Path: `frontend/templates/index.html`**
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,13 +18,24 @@
 <div class="container mt-5">
     <div class="card shadow-lg p-4">
         <h2 class="text-center text-primary">Jenkins XML to Job DSL Converter</h2>
-        <p class="text-center text-muted">Upload your <code>config.xml</code> file, and get the converted Job DSL script.</p>
+        <p class="text-center text-muted">Upload a <strong>config.xml</strong> file to convert it into a Jenkins Job DSL script.</p>
 
-        <form action="/" method="post" enctype="multipart/form-data" class="mt-4">
-            <div class="mb-3">
-                <input class="form-control" type="file" name="file" accept=".xml" required>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Convert XML to DSL</button>
+        <!-- ✅ Supported Job Types Section -->
+        <div class="alert alert-info">
+            <h5>Supported Job Types:</h5>
+            <ul>
+                <li>📌 Freestyle Jobs</li>
+                <li>📌 Pipeline Jobs</li>
+                <li>📌 Maven Jobs</li>
+                <li>📌 Matrix Jobs</li>
+                <li>📌 Multibranch Pipeline Jobs</li>
+            </ul>
+        </div>
+
+        <!-- File Upload Form -->
+        <form action="/" method="post" enctype="multipart/form-data" class="text-center">
+            <input type="file" name="file" class="form-control mb-3" accept=".xml" required>
+            <button type="submit" class="btn btn-success">Convert to Job DSL</button>
         </form>
     </div>
 </div>
